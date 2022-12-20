@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&family=Outfit&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <h1 id="title">CKD SURVEY FORM</h1>
+    <p id="description">Gathering information on public knowledge of Chronic Kidney Disease</p>
+    <form id="survey-form">
+      <fieldset>
+      <label id="name-label">Your Name: <input id="name" type="text" required placeholder="John Doe"></label>
+      <label id="email-label">Your Email Address: <input id="email" type="email" required placeholder="johndoe@provider.com"></label>
+      <label id="number-label">Your Age: <input id="number" type="number" min="13" max="120" placeholder="5"></label>
+      </fieldset>
+      <hr />
+      <fieldset>
+      <label for="relation">Who do you know that has been diagnosed with CKD?    <select id="relation">
+          <option>(Select One)</option>
+          <option>Parent(s)</option>
+          <option>Sibling(s)</option>
+          <option>Friend(s)</option>
+          <option>Spouse</option>
+          <option>Other</option>
+        </select>
+      </label>
+      <label for="yesckd">Yes
+        <input type="radio" value="yes" name="dyhckd" id="yesckd" class="inline">
+      </label>
+      <label for="nockd">No
+        <input type="radio" value="no" name="dyhckd" id="nockd" class="inline">
+      </label>
+      <label for="yncheck">
+      <input type="checkbox" value="ans1" name="yncheck">
+      <input type="checkbox" value="ans2" name="yncheck">
+      </label>
+      <label for="extrainfo">If at all, how has CKD affected your life?
+        <textarea name="extrainfo" name="extrainfo"></textarea>
+      </label>
+      </fieldset>
+      <input value="Submit" type="submit" id="submit">
+    </form>
+  </body>
